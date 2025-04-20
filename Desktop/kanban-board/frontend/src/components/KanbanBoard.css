@@ -1,0 +1,13 @@
+/* src/components/KanbanBoard.css */
+.kanban-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .kanban-board {
+      grid-template-columns: 1fr;
+    }
+  }

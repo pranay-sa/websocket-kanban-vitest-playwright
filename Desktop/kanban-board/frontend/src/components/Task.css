@@ -1,0 +1,119 @@
+/* src/components/Task.css */
+.task {
+    background-color: white;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+  }
+  
+  .task:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+  
+  .task.is-dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-title {
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+  
+  .task-badges {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .priority-badge, .category-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .category-badge {
+    background-color: #3498db;
+  }
+  
+  .task-details {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .task-description {
+    color: #666;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+  }
+  
+  .attachments h4 {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .attachment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .attachment-item {
+    max-width: 100px;
+  }
+  
+  .attachment-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #eee;
+  }
+  
+  .task-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .edit-btn, .delete-btn {
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-btn {
+    background-color: #f1c40f;
+    color: #333;
+  }
+  
+  .edit-btn:hover {
+    background-color: #f39c12;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
